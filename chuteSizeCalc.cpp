@@ -28,8 +28,7 @@ int main()
   float deceleration = 9.81 * heightm;
   float F = masskg * deceleration /*force on impact no chute in Newtons*/ ;
   if (F > 25) {
-    std::cout << '\n' << "Because the force is " << F << " N Impact will
-    break the egg, parachute required" << '\n';
+    std::cout << '\n' << "Because the force is " << F << " N Impact will break the egg, parachute required" << '\n';
     float diameter;
     std::cout << "Input diameter of parachute in cm" << '\n';
     std::cin >> diameter;
