@@ -41,9 +41,7 @@ int main()
     float velocity = sqrt((doublemass) / (1.175 * area * rho));
     std::cout << "The impact velocity will be " << velocity << " m/s" << '\n';
     deceleration = velocity;
-    
-    float F = masskg * deceleration /*force on impact no chute in
-    Newtons*/;
+    float F = masskg * deceleration /*force on impact no chute in Newtons*/;
     if (F > 25) {
       std::cout << '\n' << "Because the force is " << F << " N Impact will break the egg, a larger parachute required" << '\n';
       while (F > 25){
@@ -60,12 +58,12 @@ int main()
         std::cout << '\n' << "Because the force is " << F << " N Impact will break the egg, a larger parachute required" << '\n';
         }
         std::cout << "Force below 25 N, egg will not break" ;
-        }
-        else {
-        std::cout << '\n' << "Impact will not break egg, no parachute
-        required";
       }
+    else {
+      std::cout << '\n' << "Impact will not break egg, no parachute
+        required";
     }
+  }
   else {
     std::cout << '\n' << "Impact will not break egg, no parachute required";
   }
